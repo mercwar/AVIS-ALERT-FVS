@@ -1,0 +1,68 @@
+# proc.obj: ZNAME
+# ZNAME="AVIS_FVS_ALERT" :line 36
+          
+name: Fire-Gem UNZIP AVIS_FVS_ALERT
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/15 * * * *'   # Pulse every 15 minutes [AUTONOMOUS]
+  workflow_dispatch:          # Manual override preserved
+
+jobs:
+  avis-ignition:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout Root
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install unzip
+        run: sudo apt-get update && sudo apt-get install -y unzip
+
+      # MATERIALIZE: AVIS Beacon Extraction
+      - name: Materialize Beacon
+        run: |
+          # Define ZNAME
+          ZNAME="AVIS_FVS_ALERT"
+          # Build paths safely
+          ZIP_PATH="./${ZNAME}.zip"
+          UNZIP_PATH="./${ZNAME}"
+
+          # Ensure directory exists
+          mkdir -p "$UNZIP_PATH"
+
+          if [ -f "$ZIP_PATH" ]; then
+            unzip -o "$ZIP_PATH" -d "$UNZIP_PATH"
+            echo "AVIS: [ACK] Beacon extracted."
+          else
+            echo "AVIS: [NACK] $ZIP_PATH not found in workspace."
+            ls -R
+            exit 1
+          fi
+
+      # PORTAL SYNC: Commit only real changes
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if ! git diff --staged --quiet; then
+            git commit -m "AVIS: Beacon Materialized [Pulse]"
+            git pull --rebase -X ours origin main
+            git push origin main
+            echo "wm_macro_ack: Portal Sync Successful."
+          else
+            echo "AVIS: No changes detected."
+          fi
