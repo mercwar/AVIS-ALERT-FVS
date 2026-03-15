@@ -36,7 +36,8 @@ jobs:
           ZNAME="AVIS_FVS_ALERT"
           # Build paths safely
           ZIP_PATH="./${ZNAME}.zip"
-          UNZIP_PATH="./${ZNAME}"
+          UNZIP_PATH="./" 
+          # UNZIP_PATH="./${ZNAME}" 
 
           # Ensure directory exists
           mkdir -p "$UNZIP_PATH"
