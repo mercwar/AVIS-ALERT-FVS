@@ -7,8 +7,7 @@
 <!-- AVIS HEADER IMAGE PLACEHOLDER -->
 ![AVIS FVS HEADER — PLACEHOLDER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260315_172709.png)
 
-
-# ** AVIS FVS Alert System + Robo‑Knight / CVBGOD**
+# 📸 AVIS FVS Alert System + Robo‑Knight / CVBGOD
 
 This repository contains the **AVIS FVS Alert System**, a modular ES‑module alert engine powering the Robo‑Knight / CVBGOD infrastructure.  
 It provides:
@@ -61,7 +60,7 @@ This ensures:
 
 ---
 
-# **Repository Structure**
+# 📂 Repository Structure
 
 ```
 AVIS_FVS_ALERT/
@@ -78,16 +77,18 @@ AVIS_FVS_ALERT/
 ![AVIS FVS HEADER — PLACEHOLDER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260315_175524.png)
 
 
+
+---
+## 🚀 Getting Started
+1. **Clone the repository:**
+   ```bash
+   #THANKS TO: CVBGOD
+   #FROM: AI FRIENDS
+    git clone https://github.com.git
+   
 ---
 
-# **Quick Start**
-
-### **Clone the repository**
-```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-```
-
-### **Run the AVIS Test Console**
+### ⚙️ **Run the AVIS Test Console**
 Open in your browser:
 
 ```
@@ -96,19 +97,19 @@ http://localhost:8080/RK-AOL/AVIS_FVS_ALERT/AVIS_ALERT.html
 
 You will see:
 
-- SYSTEM MODE  
-- TEST MODE  
-- ALERT MODE  
-- TERMINAL PING  
-- NULL MESSAGE  
-- CUSTOM MESSAGE  
-- Real‑time log output  
+- 🛡️ SYSTEM MODE  
+- 🧪 TEST MODE  
+- 🚨 ALERT MODE  
+- 🖥️ TERMINAL PING  
+- 🚫 NULL MESSAGE  
+- ✍️ CUSTOM MESSAGE  
+- 📡 Real‑time log output  
 
 This interface is **publish‑ready** and can be embedded anywhere.
 
 ---
 
-# **Embedding the AVIS Console**
+### 🧩 **Embedding the AVIS Console**
 
 Add this to any RK‑AOL page:
 
@@ -121,7 +122,7 @@ Add this to any RK‑AOL page:
 
 ---
 
-# **Using AVIS_ALERT() in Your Code**
+### 🧠 **Using AVIS_ALERT() in Your Code**
 
 ```html
 <script type="module">
@@ -139,25 +140,40 @@ AVIS_ALERT(
 
 ---
 
-# **Module Behavior**
+### 🔍 **Module Behavior**
 
-### **AVIS_ALERT(active, testMode, alertMode, alertText, sendText)**
+#### `AVIS_ALERT(active, testMode, alertMode, alertText, sendText)`
 
 | Mode | Trigger | Behavior |
 |------|---------|----------|
-| **System Mode** | `active = true` | Calls `alertModule()` |
-| **Test Mode** | `active = true`, `testMode = true` | Sends `"AVIS TEST:: MODE"` |
-| **Alert Mode** | `alertMode = true` | Calls `avisAlert()` with formatted text |
-| **Terminal Update** | `sendText = true` | Sends text to `AVIS_TERM()` |
-| **Null Mode** | `alertText = ""` | Sends empty terminal message |
+| 🛡️ **System Mode** | `active = true` | Calls `alertModule()` |
+| 🧪 **Test Mode** | `active = true`, `testMode = true` | Sends `"AVIS TEST:: MODE"` |
+| 🚨 **Alert Mode** | `alertMode = true` | Calls `avisAlert()` with formatted text |
+| 🖥️ **Terminal Update** | `sendText = true` | Sends text to `AVIS_TERM()` |
+| 🚫 **Null Mode** | `alertText = ""` | Sends empty terminal message |
 
 ---
 
-# **Copyright Notice**
+### 🌐 **Project Links**
 
-```
-© 2026 CVBGOD / Robo‑Knight Universe  
-All rights reserved.
+- 🤖 **Robo‑Knight Player**  
+  `https://github.com/mercwar/Robo-Knight-Player` (github.com in Bing) [(bing.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3D%2522https%253A%252F%252Fgithub.com%252Fmercwar%252FRobo-Knight-Player%2522")
+
+- 🧪 **Robo‑Knight Demos**  
+  `https://github.com/mercwar/Robo-Knight-Demos` (github.com in Bing) [(bing.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3D%2522https%253A%252F%252Fgithub.com%252Fmercwar%252FRobo-Knight-Demos%2522")
+
+- 🌌 **Cyborg Universe Root**  
+  [https://github.com/mercwar/Cyborg](https://github.com/mercwar/Cyborg)
+
+- 🧠 **AVIS Datalake OS**  
+  `https://github.com/mercwar/AVIS-DATALAKE` (github.com in Bing) [(bing.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3D%2522https%253A%252F%252Fgithub.com%252Fmercwar%252FAVIS-DATALAKE%2522")
+
+---
+
+### 🛡️ **COPYRIGHT NOTICE**
+
+© 2026 CVBGOD / Mercwar / Robo‑Knight Universe  
+All Rights Reserved.
 
 This repository, its modules, naming conventions, AVIS law,  
 and the Robo‑Knight / CVBGOD universe are original works  
@@ -165,34 +181,38 @@ created and owned by the repository author.
 
 Unauthorized copying, redistribution, or derivative works  
 are prohibited without explicit permission.
-```
+
+---
+<!-- AVIS HEADER IMAGE PLACEHOLDER -->
+![AVIS FVS HEADER — PLACEHOLDER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260315_180733.png)
+--
+### 🚫 **RIGHTS RESERVED**
+
+All rights are expressly reserved under applicable copyright, trademark, and intellectual property laws.  
+No rights are granted, whether implied or otherwise, except as explicitly stated herein.
+
+#### ❌ PROHIBITED USES (without prior **explicit written permission** from Mercwar):
+
+- 📄 Copying or reproducing any part of this repository  
+- 🔄 Redistributing images or content in any form  
+- 🧬 Creating derivative works  
+- 💰 Commercial use of any kind  
+- 🤖 Training, fine-tuning, or prompting AI models using these materials  
+- 🗃️ Dataset inclusion or scraping  
+- 🎨 Style imitation intended to replicate the Robo-Knight visual identity  
+- 🪙 NFT minting or blockchain usage  
+- 🎮 Use in games, films, advertising, or merchandise  
 
 ---
 
-# **Project Links**
+### ✅ **Status**
 
-### **Robo‑Knight Player**
-`https://github.com/mercwar/Robo-Knight-Player` [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2Fmercwar%2FRobo-Knight-Player")
-
-### **Robo‑Knight Demos**
-`https://github.com/mercwar/Robo-Knight-Demos` [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2Fmercwar%2FRobo-Knight-Demos")
-
-### **Cyborg Universe Root**
-[https://github.com/mercwar/Cyborg](https://github.com/mercwar/Cyborg)
-
-### **AVIS Datalake OS**
-`https://github.com/mercwar/AVIS-DATALAKE` [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2Fmercwar%2FAVIS-DATALAKE")
-
----
-
-# **Status**
 The AVIS FVS Alert System is:
 
-- Stable  
-- Modular  
-- Fully operational  
-- Ready for public release  
-- Integrated with the RK‑AOL ecosystem  
+- 🧱 Stable  
+- 🧩 Modular  
+- ⚙️ Fully operational  
+- 🚀 Ready for public release  
+- 🔗 Integrated with the RK‑AOL ecosystem  
 
 ---
-
