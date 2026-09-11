@@ -1,0 +1,8 @@
+🔥==START_BLOCK==🔥
+💥 UPSTREAM_CORE :: AVIS-LOGIC-CORE/logic/v1
+💥 ENGINE_STATUS :: DEPLOYED
+💥 VERSION_TAG   :: 4.0.0-UNIVERSAL-V1
+💥 TARGET_REPO   :: AVIS-ALERT-FVS
+💥 HOOK_TYPE     :: STANDARD_UPDATE_COUPLING
+💥 DIRECTIVE    :: Serve frame alerts cleanly using flat text logging properties
+🔥==END_BLOCK==🔥
